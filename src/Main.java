@@ -48,7 +48,7 @@ public class Main {
         Random rand = new Random();
         Boolean answer;
         Scanner sc = new Scanner(System.in);
-        String[] strs = {"ses", "ath", "hum", "que", "com"};
+        String[] strs = {"ses", "ath", "hum", "que", "com", "ack", "eed", "ing", "ick", "min"};
         int[] life = {2,2};
         int currPlayer = 0;
         do {
