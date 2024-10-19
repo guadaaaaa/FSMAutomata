@@ -10,11 +10,9 @@ public class Main {
         for(int i = 0; i<checkStr.length(); i++){
             if(currState == 0){
                 if(checkStr.charAt(i) == states[state]){
-                    System.out.println("Current State 0  to State 1" + checkStr.charAt(i) + " "+ states[state]);
                     currState++;
                     state++;
                 } else {
-                    System.out.println("Current State 0 to State 0"+ checkStr.charAt(i) + " "+ states[state]);
                     currState = 0;
                     state = 0;
                     if(checkStr.charAt(i) == states[0]) i--;
@@ -24,11 +22,9 @@ public class Main {
                 }
             } else if(currState == 1){
                 if(checkStr.charAt(i) == states[state]){
-                    System.out.println("Current State 1 to State 2"+ checkStr.charAt(i) + " "+ states[state]);
                     currState++;
                     state++;
                 } else {
-                    System.out.println("Current State 1 to State 0"+ checkStr.charAt(i) + " "+ states[state]);
                     currState = 0;
                     state = 0;
                     if(checkStr.charAt(i) == states[0]) i--;
@@ -38,11 +34,9 @@ public class Main {
                 }
             } else if(currState == 2){
                 if(checkStr.charAt(i) == states[state]){
-                    System.out.println("Current State 2 to State 3"+ checkStr.charAt(i) + " "+ states[state]);
                     currState++;
                     break;
                 } else {
-                    System.out.println("Current State 2 State 0"+ checkStr.charAt(i) + " "+ states[state]);
                     currState = 0;
                     state = 0;
                     if(checkStr.charAt(i) == states[0]) i--;
