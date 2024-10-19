@@ -96,7 +96,6 @@ public class Main {
                     }
                 }
             } catch (TimeoutException e) {
-                // If the player takes too long, skip their turn
                 System.out.println("Time's up! Player " + (currPlayer + 1) + " loses a life.");
                 life[currPlayer]--;
                 if(life[currPlayer] != 0){
