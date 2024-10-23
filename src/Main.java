@@ -9,7 +9,7 @@ public class Main {
         char[] states = givenStr.toCharArray();
         for(int i = 0; i<checkStr.length(); i++){
             if(currState == 0){
-                if(checkStr.charAt(i) == states[state]){
+                if(checkStr.charAt(i) == states[currState]){
                     currState++;
                     state++;
                 } else {
@@ -21,7 +21,7 @@ public class Main {
                     }
                 }
             } else if(currState == 1){
-                if(checkStr.charAt(i) == states[state]){
+                if(checkStr.charAt(i) == states[currState]){
                     currState++;
                     state++;
                 } else {
@@ -33,7 +33,7 @@ public class Main {
                     }
                 }
             } else if(currState == 2){
-                if(checkStr.charAt(i) == states[state]){
+                if(checkStr.charAt(i) == states[currState]){
                     currState++;
                     break;
                 } else {
